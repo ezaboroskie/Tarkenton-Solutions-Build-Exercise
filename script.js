@@ -3,12 +3,15 @@ const enabledBtnBackward = document.getElementById('enabled-btn-backward');
 const disabledBtnBackward = document.getElementById('disabled-btn-backward');
 const enabledBtnForward = document.getElementById('enabled-btn-forward');
 const disabledBtnForward = document.getElementById('disabled-btn-forward');
-
 const carouselContent = document.querySelector('.carousel-content');
+const carouselThumbnails = document.querySelectorAll('.carousel-item');
+const overLayThumbs = document.querySelectorAll('.overlay')
 const totalImages = 6;
-const imageWidth = 225; // Including margin
+const imageWidth = 225; 
+console.log(overLayThumbs)
 
 let currentIndex = 0;
+overLayThumbs[currentIndex].classList.add('overlay-red');
 
 const firstContent = `<div id="lower-body-left-img">
 <img src="./assets/images/SaaS.png" alt="SaaS image">
@@ -54,16 +57,26 @@ By considering factors such as audience expectations, SEO needs, and customer fe
 <button>Learn More</button>
 </div>`
 
-const carouselThumbnails = document.querySelectorAll('.carousel-item');
+
+function updateOverlayClasses() {
+    overLayThumbs.forEach(overlayThumb => {
+        overlayThumb.classList.remove('overlay', 'overlay-red');
+    });
+    overLayThumbs[currentIndex].classList.add('overlay-red');
+}
 
 carouselThumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', function() {
+        overLayThumbs.forEach(overlayThumb => {
+            overlayThumb.classList.remove('overlay-red');
+        });        
         currentIndex = index;
         const newPosition = -currentIndex * imageWidth;
         carouselContent.style.transform = `translateX(${newPosition}px)`;
         updateButtonStates();
 
-        // Inject corresponding content based on currentIndex
+        overLayThumbs[currentIndex].classList.add('overlay-red');
+        
         const lowerBodyContainer = document.getElementById('lower-body-container');
         if (currentIndex === 0) {
             lowerBodyContainer.innerHTML = firstContent;
@@ -79,9 +92,9 @@ carouselThumbnails.forEach((thumbnail, index) => {
     });
 });
 
+
 function updateButtonStates() {
     if (currentIndex === 0) {
-       
         enabledBtnBackward.style.display = 'none';
         disabledBtnBackward.style.display = 'block';
     } else {
@@ -100,21 +113,25 @@ function updateButtonStates() {
 
 enabledBtnBackward.addEventListener('click', function() {
     if (currentIndex > 0) {
+        overLayThumbs[currentIndex].classList.remove('overlay-red');
         currentIndex--;
         const newPosition = -currentIndex * imageWidth;
         carouselContent.style.transform = `translateX(${newPosition}px)`;
         updateButtonStates();
         injectContent()
+        overLayThumbs[currentIndex].classList.add('overlay-red');
     }
 });
 
 enabledBtnForward.addEventListener('click', function() {
     if (currentIndex < totalImages - 2) {
+        overLayThumbs[currentIndex].classList.remove('overlay-red');
         currentIndex++;
         const newPosition = -currentIndex * imageWidth;
         carouselContent.style.transform = `translateX(${newPosition}px)`;
         updateButtonStates();
         injectContent()
+        overLayThumbs[currentIndex].classList.add('overlay-red');
     }
 });
 function injectContent() {
@@ -132,6 +149,6 @@ function injectContent() {
     }
 }
 
-// Initial button states
+
 updateButtonStates();
 injectContent()
