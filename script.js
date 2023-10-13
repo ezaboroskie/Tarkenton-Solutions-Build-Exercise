@@ -6,7 +6,7 @@ const disabledBtnForward = document.getElementById('disabled-btn-forward');
 const carouselContent = document.querySelector('.carousel-content');
 const carouselThumbnails = document.querySelectorAll('.carousel-item');
 const overLayThumbs = document.querySelectorAll('.overlay')
-const totalImages = 6;
+const totalImages = 9;
 const imageWidth = 225; 
 console.log(overLayThumbs)
 
@@ -22,25 +22,25 @@ const firstContent = `<div id="lower-body-left-img">
 <button>Learn More</button>
 </div>`
 const secondContent = `<div id="lower-body-left-img">
-<img src="assets/images/software dev.png" alt="SaaS image">
+<img src="assets/images/software dev.png" alt="Software Development image">
 </div>
 <div id="lower-body-right-container">
 <h2>Software Development</h2>
 <p>Tarkenton’s development team designs, codes, tests, and maintains a wide range of programs and applications for our partners. New technology can revolutionize industries, but also has to be implemented thoughtfully and strategically. Our team combines their creativity, problem-solving, and technical skills to transform ideas and requirements into reliable software solutions.
-Operating in a series of “sprints,” we will always fully communicate the current state of the project so you can easily understand where we are, where we’re going, and how we might continue to iterate and improve in the future.</p>
+<br><br>Operating in a series of “sprints,” we will always fully communicate the current state of the project so you can easily understand where we are, where we’re going, and how we might continue to iterate and improve in the future.</p>
 <button>Learn More</button>
 </div>`
 const thirdContent = `<div id="lower-body-left-img">
-<img src="assets/images/rsearch and strategy.png" alt="SaaS image">
+<img src="assets/images/rsearch and strategy.png" alt="Research and Strategy image">
 </div>
 <div id="lower-body-right-container">
 <h2>Research and Strategy</h2>
 <p>Research and strategy are the starting line for beginning any new project. From gathering and analyzing information to understanding trends and uncovering patterns, we conduct research to provide the foundation for effective strategy development. We’ll create a journey map to fully understand the current process for your customers, as well as the desired goal.
-Using that, we’ll develop a plan for reaching those goals, incorporating internal teams, Tarkenton resources, and third parties as needed to execute all aspects of the strategy.</p>
+<br><br>Using that, we’ll develop a plan for reaching those goals, incorporating internal teams, Tarkenton resources, and third parties as needed to execute all aspects of the strategy.</p>
 <button>Learn More</button>
 </div>`
 const fourthContent = `<div id="lower-body-left-img">
-<img src="assets/images/brand dev.png" alt="SaaS image">
+<img src="assets/images/brand dev.png" alt="Brand Development image">
 </div>
 <div id="lower-body-right-container">
 <h2>Brand Development</h2>
@@ -48,12 +48,38 @@ const fourthContent = `<div id="lower-body-left-img">
 <button>Learn More</button>
 </div>`
 const fifthContent = `<div id="lower-body-left-img">
-<img src="assets/images/content strategy.png" alt="SaaS image">
+<img src="assets/images/content strategy.png" alt="Content Strategy image">
 </div>
 <div id="lower-body-right-container">
 <h2>Content Strategy</h2>
 <p>A well-crafted content strategy provides value to clients and prospects, enhances their experience, and ultimately propels your business towards success. Our content team can work with you to create a comprehensive plan that guides the creation, execution, and promotion of all your content across various channels.
-By considering factors such as audience expectations, SEO needs, and customer feedback, we ensure that the right message reaches the people at the right time to foster brand awareness, build authority, and drive meaningful engagement.</p>
+<br><br> By considering factors such as audience expectations, SEO needs, and customer feedback, we ensure that the right message reaches the people at the right time to foster brand awareness, build authority, and drive meaningful engagement.</p>
+<button>Learn More</button>
+</div>`
+const sixthContent = `<div id="lower-body-left-img">
+<img src="assets/images/marketing strategy.png" alt="Marketing Strategy image">
+</div>
+<div id="lower-body-right-container">
+<h2>Marketing Strategy</h2>
+<p>Having a plan is a fundamental need for any business to achieve success, and marketing is one of the most important parts of that plan. Tarkenton’s marketing experts work together with key stakeholders to develop and execute the right plan for any project based on your company’s goals and the needs of your audience. Whether it’s a go-to-market plan for a new product or a fresh approach to a tried-and-true service, Tarkenton will help you distinguish yourself from the competition and stand out to customers.</p>
+<button>Learn More</button>
+</div>`
+const seventhContent = `<div id="lower-body-left-img">
+<img src="assets/images/client support.png" alt="Client Support image">
+</div>
+<div id="lower-body-right-container">
+<h2>Client Support</h2>
+<p>Client support is the pinnacle of ensuring customer satisfaction and building long-term relationships. Our support team can provide ongoing assistance and guidance to your clients throughout their journey, addressing inquiries, concerns, and issues promptly and effectively.
+<br><br>Whether it's through phone, email, or live chat, our client support team empathizes with individual situations, going the extra mile to exceed expectations. Your team can focus on doing what you do best, while our white-glove service team ensures client satisfaction at every step.</p>
+<button>Learn More</button>
+</div>`
+const eighthContent = `<div id="lower-body-left-img">
+<img src="assets/images/sales training.png" alt="Sales and Support Training image">
+</div>
+<div id="lower-body-right-container">
+<h2>Sales and Support Training</h2>
+<p>Tarkenton’s team is committed to seeing each project through from planning all the way through execution. A major determinant of success will be preparing your company’s sales and service teams to properly market and support new offerings. We can deliver ongoing training and support for those internal teams to help your business sustain success, fitting into your own communication channels and providing new outlets as needed.
+</p>
 <button>Learn More</button>
 </div>`
 
@@ -88,7 +114,13 @@ carouselThumbnails.forEach((thumbnail, index) => {
             lowerBodyContainer.innerHTML = fourthContent;
         } else if (currentIndex === 4) {
             lowerBodyContainer.innerHTML = fifthContent;
-        }
+        } else if (currentIndex === 5) {
+            lowerBodyContainer.innerHTML = sixthContent;
+        } else if (currentIndex === 6) {
+            lowerBodyContainer.innerHTML = seventhContent;
+        } else if (currentIndex === 7) {
+            lowerBodyContainer.innerHTML = eighthContent;
+        } 
     });
 });
 
@@ -135,18 +167,24 @@ enabledBtnForward.addEventListener('click', function() {
     }
 });
 function injectContent() {
-    const lowerBodyContainer = document.getElementById('lower-body-container');
+    const injectionContainer = document.getElementById('injection-container');
     if (currentIndex === 0) {
-        lowerBodyContainer.innerHTML = firstContent;
+        injectionContainer.innerHTML = firstContent;
     } else if (currentIndex === 1) {
-        lowerBodyContainer.innerHTML = secondContent;
+        injectionContainer.innerHTML = secondContent;
     } else if (currentIndex === 2) {
-        lowerBodyContainer.innerHTML = thirdContent;
+        injectionContainer.innerHTML = thirdContent;
     } else if (currentIndex === 3) {
-        lowerBodyContainer.innerHTML = fourthContent;
+        injectionContainer.innerHTML = fourthContent;
     } else if (currentIndex === 4) {
-        lowerBodyContainer.innerHTML = fifthContent;
-    }
+        injectionContainer.innerHTML = fifthContent;
+    } else if (currentIndex === 5) {
+        injectionContainer.innerHTML = sixthContent;
+    } else if (currentIndex === 6) {
+        injectionContainer.innerHTML = seventhContent;
+    } else if (currentIndex === 7) {
+        injectionContainer.innerHTML = eighthContent;
+    } 
 }
 
 
