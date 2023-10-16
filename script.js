@@ -17,7 +17,7 @@ const firstContent = `<div id="lower-body-left-img">
 <img src="./assets/images/SaaS.png" alt="SaaS image">
 </div>
 <div id="lower-body-right-container">
-<h2>White Label Saas Solutions</h2>
+<h2>White Label SaaS Solutions</h2>
 <p>Over 20+ years, Tarkenton has developed, maintained, and regularly updated a library of SaaS offerings aimed at small business users. We work with partners to white label and integrate these services into your existing product lines, or create new offerings that will drive new sales growth. We provide clients with tremendous flexibility, scalability, and speed to execute a new plan.</p>
 <button>Learn More</button>
 </div>`
@@ -82,6 +82,7 @@ const eighthContent = `<div id="lower-body-left-img">
 </p>
 <button>Learn More</button>
 </div>`
+
 
 
 function updateOverlayClasses() {
