@@ -1,36 +1,36 @@
 @font-face{
-    font-family: 'Metropolis';
-    src: url('/assets/fonts/metropolis.black.otf') format('opentype');
+    font-family: 'metropolis';
+    src: url('./assets/fonts/metropolis.black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Metropolis-bold';
-    src: url('/assets/fonts/metropolis.bold.otf') format('opentype');
+    font-family: 'metropolis-bold';
+    src: url('./assets/fonts/metropolis.bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Metropolis-regular';
-    src: url('/assets/fonts/metropolis.regular.otf') format('opentype');
+    font-family: 'metropolis-regular';
+    src: url('./assets/fonts/metropolis.regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Metropolis-light';
-    src: url('/assets/fonts/metropolis.light.otf') format('opentype');
+    font-family: 'metropolis-light';
+    src: url('./assets/fonts/metropolis.light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Metropolis-medium';
-    src: url('/assets/fonts/metropolis.medium.otf') format('opentype');
+    font-family: 'metropolis-medium';
+    src: url('./assets/fonts/metropolis.medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Metropolis-extra-light';
-    src: url('/assets/fonts/metropolis.extra-light.otf') format('opentype');
+    font-family: 'metropolis-extra-light';
+    src: url('./assets/fonts/metropolis.extra-light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +41,7 @@ body{
     background-color: #000000;
     margin: 0;
     padding: 0;
-    font-family: 'Metropolis', sans-serif;
+    font-family: 'metropolis', sans-serif;
 }
 h1{
     margin: 0;
@@ -124,7 +124,7 @@ h1{
     text-align: center;
     color: #FFFFFF;
     font-size: 20px;
-    font-family: 'Metropolis-bold';
+    font-family: 'metropolis-bold';
     width: 100%;
     height: 100%;
     display: flex;
@@ -189,14 +189,14 @@ h1{
     margin: 0;
     font-size: 25px;
     color: #FFFFFF;
-    font-family: 'Metropolis-bold';
+    font-family: 'metropolis-bold';
     line-height: 144%;
     font-weight: 700;
     font-style: normal;
 }
 #lower-body-right-container p{
     color: #FFF;
-    font-family: 'Metropolis-extra-light';
+    font-family: 'metropolis-extra-light';
     font-size: 16px;
     font-style: light;
     font-weight: 200;
@@ -211,7 +211,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-family: 'Metropolis-regular';
+    font-family: 'metropolis-regular';
     font-size: 18px;
     font-style: normal;
     line-height: 137%;
@@ -294,7 +294,7 @@ h1{
         text-align: center;
         color: #FFFFFF;
         font-size: 16px;
-        font-family: 'Metropolis-bold';
+        font-family: 'metropolis-bold';
         width: 100%;
         height: 100%;
         display: flex;
