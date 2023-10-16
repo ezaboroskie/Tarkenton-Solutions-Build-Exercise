@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="Tarkenton offers a variety of digital solutions to fit your business's needs. Learn more today.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
-    <title>Tarkenton - Our Solutions</title>
+    <title>Tarkenton | Our Solutions</title>
 </head>
 <body>
 
@@ -19,50 +20,67 @@
                 <h1 id="main-heading">Our <span id="underline">Solutions</span></h1>
             </div>
             <div id="main-content-body-container">
-                <div id="carousel-container">
-                    <div class="carousel-content">
-                        <div class="carousel-item first">
-                            <div class="overlay">White Label <br> SaaS Solutions</div>
-                            <img src="./assets/images/SaaS Thumb.png" alt="SaaS thumbnail">
+
+                <div class="swiper">
+                   
+                    <div class="swiper-wrapper">
+                    
+                        <div class="swiper-slide">
+
+                                <div class="overlay">White Label <br> SaaS Solutions</div>
+                                <img src="./assets/images/SaaS Thumb.png" alt="SaaS thumbnail">
+        
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Software <br> Development</div>
-                            <img src="./assets/images/software dev thumb.png" alt="Software Dev thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Software <br> Development</div>
+                                <img src="./assets/images/software dev thumb.png" alt="Software Dev thumbnail">
+                            
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Research & <br> Strategy</div>
-                            <img src="./assets/images/research and strategy thumb.png" alt="Research and Strategy thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Research & <br> Strategy</div>
+                                <img src="./assets/images/research and strategy thumb.png" alt="Brand Development thumbnail">
+                            
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Brand <br> Development</div>
-                            <img src="./assets/images/brand dev thumb.png" alt="Brand Development thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Brand <br> Development</div>
+                                <img src="./assets/images/brand dev thumb.png" alt="SaaS thumbnail">
+                           
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Content <br> Strategy</div>
-                            <img src="./assets/images/content thumb.png" alt="Content Strategy thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Content <br> Strategy</div>
+                                <img src="./assets/images/content strategy.png" alt="Software Dev thumbnail">
+                            
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Marketing <br> Strategy</div>
-                            <img src="./assets/images/marketing strategy thumb.png" alt="Marketing Strategy thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Marketing <br> Strategy</div>
+                                <img src="./assets/images/marketing strategy thumb.png" alt="Brand Development thumbnail">
+                            
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Client Support</div>
-                            <img src="./assets/images/client support thumb.png" alt="Client Support thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Client Support</div>
+                                <img src="./assets/images/client support thumb.png" alt="Brand Development thumbnail">
+                           
                         </div>
-                        <div class="carousel-item">
-                            <div class="overlay">Sales & Support <br> Training</div>
-                            <img src="./assets/images/sales training thumb.png" alt="Sales & Support Training thumbnail">
+                        <div class="swiper-slide">
+                                <div class="overlay">Sales & Support <br> Training</div>
+                                <img src="./assets/images/sales training thumb.png" alt="Brand Development thumbnail">
+                           
                         </div>
+                        <div  class="swiper-slide" class="hidden"></div>
+                        <div class="swiper-slide" class="hidden"></div>
+                        <div class="swiper-slide" class="hidden"></div>
+                        <div class="swiper-slide" class="hidden"></div>
+
                     </div>
-                </div>
-                <div class="carousel-nav-left-right-container">
-                    <img id="disabled-btn-backward" src="./assets/images/backward scroll disabled.png" alt="carousel backward scroll">
-                    <img id=enabled-btn-backward src="./assets/images/backward scroll.png" alt="carousel backward scroll">
-                    <img id="enabled-btn-forward" src="./assets/images/forward scroll.png" alt="carousel forward scroll">
-                    <img id="disabled-btn-forward" src="./assets/images/forward scroll disabled.png" alt="carousel forward scroll">
-                </div>
+                </div> 
+           <div class="carousel-nav-left-right-container">
+                <img id="disabled-btn-backward" src="./assets/images/backward scroll disabled.png" alt="carousel backward scroll">
+                <img id="enabled-btn-backward" class=enabled-btn-backward src="./assets/images/backward scroll.png" alt="carousel backward scroll">
+                <img id="enabled-btn-forward" class="enabled-btn-forward" src="./assets/images/forward scroll.png" alt="carousel forward scroll">
+                <img id="disabled-btn-forward" src="./assets/images/forward scroll disabled.png" alt="carousel forward scroll">
+            </div>
                 <div id="lower-body-container">
-                    <div id="injection-container">
+                    <div id="injection-container1">
                         <div id="lower-body-left-img">
                             <img src="./assets/images/SaaS.png" alt="SaaS image">
                         </div>
@@ -72,18 +90,139 @@
                             <button>Learn More</button>
                         </div>
                     </div>
-                  
+                    <div id="injection-container2">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/software dev.png" alt="Software Development image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Software Development</h2>
+                            <p>Tarkenton’s development team designs, codes, tests, and maintains a wide range of programs and applications for our partners. New technology can revolutionize industries, but also has to be implemented thoughtfully and strategically. Our team combines their creativity, problem-solving, and technical skills to transform ideas and requirements into reliable software solutions.
+                            <br><br>Operating in a series of “sprints,” we will always fully communicate the current state of the project so you can easily understand where we are, where we’re going, and how we might continue to iterate and improve in the future.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div id="injection-container3">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/rsearch and strategy.png" alt="Research and Strategy image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Research and Strategy</h2>
+                            <p>Research and strategy are the starting line for beginning any new project. From gathering and analyzing information to understanding trends and uncovering patterns, we conduct research to provide the foundation for effective strategy development. We’ll create a journey map to fully understand the current process for your customers, as well as the desired goal.
+                            <br><br>Using that, we’ll develop a plan for reaching those goals, incorporating internal teams, Tarkenton resources, and third parties as needed to execute all aspects of the strategy.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div id="injection-container4">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/brand dev.png" alt="Brand Development image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Brand Development</h2>
+                            <p>Your brand needs an identity. Through our brand development process, we collaborate with your team to craft a unique identity that represents your company, your offerings, and your values. From market research and competitive analyses to custom design work, we will lay the foundation for a consistent and authentic identity that highlights your voice.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div id="injection-container5">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/content strategy.png" alt="Content Strategy image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Content Strategy</h2>
+                            <p>A well-crafted content strategy provides value to clients and prospects, enhances their experience, and ultimately propels your business towards success. Our content team can work with you to create a comprehensive plan that guides the creation, execution, and promotion of all your content across various channels.
+                            <br><br> By considering factors such as audience expectations, SEO needs, and customer feedback, we ensure that the right message reaches the people at the right time to foster brand awareness, build authority, and drive meaningful engagement.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div id="injection-container6">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/marketing strategy.png" alt="Marketing Strategy image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Marketing Strategy</h2>
+                            <p>Having a plan is a fundamental need for any business to achieve success, and marketing is one of the most important parts of that plan. Tarkenton’s marketing experts work together with key stakeholders to develop and execute the right plan for any project based on your company’s goals and the needs of your audience. Whether it’s a go-to-market plan for a new product or a fresh approach to a tried-and-true service, Tarkenton will help you distinguish yourself from the competition and stand out to customers.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div id="injection-container7">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/client support.png" alt="Client Support image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Client Support</h2>
+                            <p>Client support is the pinnacle of ensuring customer satisfaction and building long-term relationships. Our support team can provide ongoing assistance and guidance to your clients throughout their journey, addressing inquiries, concerns, and issues promptly and effectively.
+                            <br><br>Whether it's through phone, email, or live chat, our client support team empathizes with individual situations, going the extra mile to exceed expectations. Your team can focus on doing what you do best, while our white-glove service team ensures client satisfaction at every step.</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div id="injection-container8">
+                        <div id="lower-body-left-img">
+                            <img src="assets/images/sales training.png" alt="Sales and Support Training image">
+                        </div>
+                        <div id="lower-body-right-container">
+                            <h2>Sales and Support Training</h2>
+                            <p>Tarkenton’s team is committed to seeing each project through from planning all the way through execution. A major determinant of success will be preparing your company’s sales and service teams to properly market and support new offerings. We can deliver ongoing training and support for those internal teams to help your business sustain success, fitting into your own communication channels and providing new outlets as needed.
+                            </p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
                 </div>  
                 <div id="lower-right-corner-square-outer"></div>
                 <div id="lower-right-corner-square-inner"></div>
             </div>
+        </div>
         </main>
         <img id="outline-logo" src="./assets/images/outline-logo.png" alt="Tarkenton Logo Outline">
+
         <footer id="footer-container">
             <!-- insert company footer here -->
         </footer>
     </div>
-        
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>     
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- <div id="carousel-container">
+    <div class="carousel-content">
+        <div class="carousel-item first">
+            <div class="overlay">White Label <br> SaaS Solutions</div>
+            <img src="./assets/images/SaaS Thumb.png" alt="SaaS thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Software <br> Development</div>
+            <img src="./assets/images/software dev thumb.png" alt="Software Dev thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Research & <br> Strategy</div>
+            <img src="./assets/images/research and strategy thumb.png" alt="Research and Strategy thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Brand <br> Development</div>
+            <img src="./assets/images/brand dev thumb.png" alt="Brand Development thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Content <br> Strategy</div>
+            <img src="./assets/images/content thumb.png" alt="Content Strategy thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Marketing <br> Strategy</div>
+            <img src="./assets/images/marketing strategy thumb.png" alt="Marketing Strategy thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Client Support</div>
+            <img src="./assets/images/client support thumb.png" alt="Client Support thumbnail">
+        </div>
+        <div class="carousel-item">
+            <div class="overlay">Sales & Support <br> Training</div>
+            <img src="./assets/images/sales training thumb.png" alt="Sales & Support Training thumbnail">
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="carousel-nav-left-right-container">
+    <img id="disabled-btn-backward" src="./assets/images/backward scroll disabled.png" alt="carousel backward scroll">
+    <img id=enabled-btn-backward src="./assets/images/backward scroll.png" alt="carousel backward scroll">
+    <img id="enabled-btn-forward" src="./assets/images/forward scroll.png" alt="carousel forward scroll">
+    <img id="disabled-btn-forward" src="./assets/images/forward scroll disabled.png" alt="carousel forward scroll">
+</div> -->
