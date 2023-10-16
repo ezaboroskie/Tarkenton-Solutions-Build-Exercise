@@ -1,36 +1,36 @@
 @font-face{
     font-family: 'Metropolis';
-    src: url('./assets/fonts/metropolis.black.otf') format('opentype');
+    src: url('/assets/fonts/metropolis.black.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Metropolis-bold';
-    src: url('./assets/fonts/metropolis.bold.otf') format('opentype');
+    src: url('/assets/fonts/metropolis.bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Metropolis-regular';
-    src: url('./assets/fonts/metropolis.regular.otf') format('opentype');
+    src: url('/assets/fonts/metropolis.regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Metropolis-light';
-    src: url('./assets/fonts/metropolis.light.otf') format('opentype');
+    src: url('/assets/fonts/metropolis.light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Metropolis-medium';
-    src: url('./assets/fonts/metropolis.medium.otf') format('opentype');
+    src: url('/assets/fonts/metropolis.medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Metropolis-extra-light';
-    src: url('./assets/fonts/metropolis.extra-light.otf') format('opentype');
+    src: url('/assets/fonts/metropolis.extra-light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
