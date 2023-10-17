@@ -27,108 +27,27 @@ const swiper = new Swiper('.swiper', {
             spaceBetween:20,
         },
     },
-    
 
     navigation: {
       nextEl: '.enabled-btn-forward',
       prevEl: '.enabled-btn-backward',
     },
+    
   
-  }); 
+  });
 
-   
+
 swiper.on('slideChange', function(){
-   
-    const realIndex = swiper.realIndex
+    const realIndex = swiper.realIndex;
+    const injContainers = [injCont1, injCont2, injCont3, injCont4, injCont5, injCont6, injCont7, injCont8];
 
-   
-    if(realIndex==0){
-        backBtn.style.display='none'
-        disBackBtn.style.display='flex'
-    }
-    if(realIndex !==0 && realIndex !==7){
-        disBackBtn.style.display = 'none'
-        backBtn.style.display = 'flex'
-        disForBtn.style.display= 'none'
-        forBtn.style.display='flex'
-    }
-    if(realIndex == 7){
-        disForBtn.style.display='flex'
-        forBtn.style.display = 'none'
-    }
-    if(realIndex == 0){
-        injCont1.style.display='flex'
-        injCont2.style.display='none'
-        injCont3.style.display='none'
-        injCont4.style.display='none'
-        injCont5.style.display='none'
-        injCont6.style.display='none'
-        injCont7.style.display='none'
-        injCont8.style.display='none'
-    }else if(realIndex == 1){
-        injCont1.style.display='none'
-        injCont2.style.display='flex'
-        injCont3.style.display='none'
-        injCont4.style.display='none'
-        injCont5.style.display='none'
-        injCont6.style.display='none'
-        injCont7.style.display='none'
-        injCont8.style.display='none'
-    }else if(realIndex == 2){
-        injCont1.style.display='none'
-        injCont2.style.display='none'
-        injCont3.style.display='flex'
-        injCont4.style.display='none'
-        injCont5.style.display='none'
-        injCont6.style.display='none'
-        injCont7.style.display='none'
-        injCont8.style.display='none'
-    }else if(realIndex == 3){
-        injCont1.style.display='none'
-        injCont2.style.display='none'
-        injCont3.style.display='none'
-        injCont4.style.display='flex'
-        injCont5.style.display='none'
-        injCont6.style.display='none'
-        injCont7.style.display='none'
-        injCont8.style.display='none'
-    }else if(realIndex == 4){
-        injCont1.style.display='none'
-        injCont2.style.display='none'
-        injCont3.style.display='none'
-        injCont4.style.display='none'
-        injCont5.style.display='flex'
-        injCont6.style.display='none'
-        injCont7.style.display='none'
-        injCont8.style.display='none'
-    }else if(realIndex == 5){
-        injCont1.style.display='none'
-        injCont2.style.display='none'
-        injCont3.style.display='none'
-        injCont4.style.display='none'
-        injCont5.style.display='none'
-        injCont6.style.display='flex'
-        injCont7.style.display='none'
-        injCont8.style.display='none'
-    }else if(realIndex == 6){
-        injCont1.style.display='none'
-        injCont2.style.display='none'
-        injCont3.style.display='none'
-        injCont4.style.display='none'
-        injCont5.style.display='none'
-        injCont6.style.display='none'
-        injCont7.style.display='flex'
-        injCont8.style.display='none'
-    }else if(realIndex == 7){
-        injCont1.style.display='none'
-        injCont2.style.display='none'
-        injCont3.style.display='none'
-        injCont4.style.display='none'
-        injCont5.style.display='none'
-        injCont6.style.display='none'
-        injCont7.style.display='none'
-        injCont8.style.display='flex'
-    }
-       
-})
-  
+    backBtn.style.display = (realIndex === 0) ? 'none' : 'flex';
+    disBackBtn.style.display = (realIndex === 0) ? 'flex' : 'none';
+    disForBtn.style.display = (realIndex === 7) ? 'flex' : 'none';
+    forBtn.style.display = (realIndex !== 7) ? 'flex' : 'none';
+    console.log(realIndex)
+
+    injContainers.forEach((container, index) => {
+        container.style.display = (index === realIndex) ? 'flex' : 'none';
+    });
+});

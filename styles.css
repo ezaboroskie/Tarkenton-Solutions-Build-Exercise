@@ -95,6 +95,8 @@ h1{
 }
 .hidden{
     cursor: none;
+    visibility: hidden;
+    pointer-events: none;
 }
 .swiper{
     margin-top: 15px;
