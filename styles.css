@@ -401,7 +401,7 @@ h1{
     #outline-logo{
         display: none
     }
-    #hidden1, #hidden2, #hidden3, #hidden4{
+    #hidden1, #hidden2, #hidden3{
         display: none;
         pointer-events: none;
     }
