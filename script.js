@@ -15,11 +15,13 @@ backBtn.style.display = 'none'
 disForBtn.style.display = 'none'
 
 const swiper = new Swiper('.swiper', {
-  
+
+
     direction: 'horizontal',
     slideToClickedSlide: true,
     slidesPerView: 2.5,
-    spaceBetween: 10,
+    spaceBetween: 15,
+    
 
     breakpoints:{
         975:{
@@ -45,7 +47,7 @@ swiper.on('slideChange', function(){
     disBackBtn.style.display = (realIndex === 0) ? 'flex' : 'none';
     disForBtn.style.display = (realIndex === 7) ? 'flex' : 'none';
     forBtn.style.display = (realIndex !== 7) ? 'flex' : 'none';
-    
+
 
     injContainers.forEach((container, index) => {
         container.style.display = (index === realIndex) ? 'flex' : 'none';
