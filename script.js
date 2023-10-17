@@ -45,7 +45,7 @@ swiper.on('slideChange', function(){
     disBackBtn.style.display = (realIndex === 0) ? 'flex' : 'none';
     disForBtn.style.display = (realIndex === 7) ? 'flex' : 'none';
     forBtn.style.display = (realIndex !== 7) ? 'flex' : 'none';
-    console.log(realIndex)
+    
 
     injContainers.forEach((container, index) => {
         container.style.display = (index === realIndex) ? 'flex' : 'none';
